@@ -9,7 +9,7 @@ transports.push(
 );
 
 const LoggerInstance = winston.createLogger({
-    level: 'silly',
+    level: config.log.level,
     format: winston.format.simple(),
     transports
 });
